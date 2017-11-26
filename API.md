@@ -1,6 +1,6 @@
 # API
 
-###商品列表
+### 商品列表
 
 ```
 GET /product/list

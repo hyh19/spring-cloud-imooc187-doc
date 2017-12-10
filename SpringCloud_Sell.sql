@@ -61,6 +61,5 @@ create table `order_detail` (
     `create_time` timestamp not null default current_timestamp comment '创建时间',
     `update_time` timestamp not null default current_timestamp on update current_timestamp comment '修改时间',
     primary key (`detail_id`),
-    key `idx_order_id` (`order_id`),
-    foreign key(`order_id`) REFERENCES order_master(`order_id`)
+    key `idx_order_id` (`order_id`)
 );

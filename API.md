@@ -80,4 +80,42 @@ items: [{
       "orderId": "147283992738221" 
   }
 }
+
+```
+
+
+### 买家登录
+
+```
+GET /login/buyer
+```
+
+参数
+
+```
+openid: abc
+```
+
+返回
+
+```
+cookie里设置openid=abc
+```
+
+### 卖家登录
+
+```
+GET /login/seller
+```
+
+参数
+
+```
+openid: xyz
+```
+
+返回
+
+```
+cookie里设置token=UUID, redis设置key=UUID, value=xyz
 ```

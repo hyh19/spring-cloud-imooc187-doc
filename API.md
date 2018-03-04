@@ -116,6 +116,12 @@ openid: xyz
 
 返回
 
+`cookie里设置token=UUID, redis设置key=UUID, value=xyz`
+
 ```
-cookie里设置token=UUID, redis设置key=UUID, value=xyz
+{
+    code: 0,
+    msg: "成功",
+    data: null
+}
 ```

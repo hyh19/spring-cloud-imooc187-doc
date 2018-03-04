@@ -98,8 +98,14 @@ openid: abc
 
 返回
 
+`cookie里设置openid=abc`
+
 ```
-cookie里设置openid=abc
+{
+    code: 0,
+    msg: "成功",
+    data: null
+}
 ```
 
 ### 卖家登录

@@ -46,3 +46,17 @@
 ```
 
 + 若在自己配置了国内maven库镜像后无法下载以上版本，则请将镜像注释掉，用maven默认的中央仓库下载（如果觉得太慢，就用科学上网）
+
+
+## 2. 遇到Eureka无法启动的情况
+
+解决方法：
++ 如果用的版本是SpringBoot 2.0.0.M3和SpringCloud Finchley.M2按照视频可正常启动
++ 如果是高版本无法启动时，需要在pom.xml中加入如下依赖：
+
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```

@@ -60,3 +60,22 @@
     <artifactId>spring-boot-starter-web</artifactId>
 </dependency>
 ```
+
+## 3. 订单模块使用FeignClient项目不能正常启动
+
+解决方法：
++ 如果在SpringBoot 2.0.0.M3和SpringCloud Finchley.M2情况下，在pom.xml加入：
+
+```
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-feign</artifactId>
+  <version>2.0.0.M1</version>
+</dependency>
+```
+
++ 如果完全按照师兄视频中的版本（BUILDSNAPSHOT和openfeign），有同学提出方法：
+
+在启动类里加上这两行：
+@ComponentScan(basePackages = "com.imooc")
+@EnableFeignClients(basePackages = {"com.imooc.product.client"})

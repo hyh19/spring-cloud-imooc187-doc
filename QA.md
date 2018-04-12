@@ -1,9 +1,9 @@
 # 常见问题汇总
 
-## 问题一 无法下载SpringBoot 2.0.0.M3和SpringCloud Finchley.M2
+## 问题1 无法下载SpringBoot 2.0.0.M3和SpringCloud Finchley.M2
 
 解决方法：
-+ 在pom.xml文件里加上如下代码：
++ 在pom.xml文件里加上如下代码(可参考https://gitlab-demo.com/SpringCloud_Sell/product/blob/master/pom.xml)：
 
 ```
 <repositories>

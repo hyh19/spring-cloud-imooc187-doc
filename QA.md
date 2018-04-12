@@ -77,5 +77,7 @@
 + 如果完全按照师兄视频中的版本（BUILDSNAPSHOT和openfeign），有同学提出方法：
 
 在启动类里加上这两行：
+```
 @ComponentScan(basePackages = "com.imooc")
 @EnableFeignClients(basePackages = {"com.imooc.product.client"})
+```

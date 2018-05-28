@@ -83,12 +83,12 @@
 ```
 
 
-## 4.order项目的server模块不能正常引入product项目中的client模块 
-出现原因  
+## 4.order项目的server模块不能正常引入product项目中的client模块
+出现原因
 + 可能是因为product项目的client模块还没有打包成功，order项目的server模块不能找不到该依赖
 
 
-解决办法  
+解决办法
 + 1.先对product项目,在父模块下进行maven打包
 ```
 mvn clean install -Dmaven.test.skip=true

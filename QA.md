@@ -82,3 +82,18 @@
 @EnableFeignClients(basePackages = {"com.imooc.product.client"})
 ```
 
+
+## 4.order项目的server模块不能正常引入product项目中的client模块 
+出现原因  
++ 可能是因为product项目的client模块还没有打包成功，order项目的server模块不能找不到该依赖
+
+
+解决办法  
++ 1.先对product项目,在父模块下进行maven打包
+```
+mvn clean install -Dmaven.test.skip=true
+```
++ 2.再进入order项目，用同样的命令再进行打包
+
+如果对maven多模块没有经验的同学建议先看下慕课网上相关的视频课程，[链接](https://www.imooc.com/video/16354)
+

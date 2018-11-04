@@ -3,7 +3,7 @@
 ## 1. 无法下载SpringBoot 2.0.0.M3和SpringCloud Finchley.M2
 
 解决方法：
-+ 在pom.xml文件里加上如下代码(可参考[product的pom.xml](https://gitlab-demo.com/SpringCloud_Sell/product/blob/master/pom.xml))：
++ 在pom.xml文件里加上如下代码（可参考product的pom.xml）：
 
 ```
 <repositories>

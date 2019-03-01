@@ -98,9 +98,9 @@ mvn clean install -Dmaven.test.skip=true
 如果对maven多模块没有经验的同学建议先看下慕课网上相关的视频课程，[链接](https://www.imooc.com/video/16354)
 
 ## 5.视频中bus章节中的springboot2.0.0.BUILD-SNAPSHOT版本
-![issue](https://raw.githubusercontent.com/wirechen/github-readme/master/img/bus-build.png)
+![issue](/resoures/bus-build.png)
 
 解决办法
 + 改为以下配置  
 
-![resolve](https://github.com/wirechen/github-readme/blob/master/img/bus-resovle.jpg?raw=true =100x20)
+![resolve](/resoures/bus-resovle.jpg)

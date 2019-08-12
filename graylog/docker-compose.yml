@@ -26,6 +26,7 @@ services:
       # echo -n "Enter Password: " && head -1 </dev/stdin | tr -d '\n' | sha256sum | cut -d" " -f1
       - GRAYLOG_ROOT_PASSWORD_SHA2=8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
       - GRAYLOG_HTTP_EXTERNAL_URI=http://127.0.0.1:9000/
+      # 下面要写外网地址, 不要写127.0.0.1
       - GRAYLOG_ELASTICSEARCH_HOSTS=http://192.168.31.32:9200
       - GRAYLOG_ROOT_TIMEZONE=Asia/Shanghai
     links:

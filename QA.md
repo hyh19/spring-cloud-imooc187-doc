@@ -63,14 +63,32 @@
 
 ## 3. 订单模块使用FeignClient项目不能正常启动
 
+原因：
+feign组件后来改名为openfeign了
+
 解决方法：
-+ 如果在SpringBoot 2.0.0.M3和SpringCloud Finchley.M2情况下，在pom.xml加入：
++ 如果在SpringBoot 2.0.0.M3和SpringCloud Finchley.M2情况下，
+
+在根pom.xml里加上
+
+```
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+          <groupId>org.springframework.cloud</groupId>
+          <artifactId>spring-cloud-starter-feign</artifactId>
+          <version>2.0.0.M1</version>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
+在order/pom.xml里加上
 
 ```
 <dependency>
   <groupId>org.springframework.cloud</groupId>
   <artifactId>spring-cloud-starter-feign</artifactId>
-  <version>2.0.0.M1</version>
 </dependency>
 ```
 

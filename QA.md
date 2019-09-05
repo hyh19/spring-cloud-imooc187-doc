@@ -76,8 +76,8 @@ feign组件后来改名为openfeign了
     <dependencies>
         <dependency>
           <groupId>org.springframework.cloud</groupId>
-          <artifactId>spring-cloud-starter-feign</artifactId>
-          <version>2.0.0.M1</version>
+          <artifactId>spring-cloud-starter-openfeign</artifactId>
+          <version>2.0.0.M3</version>
         </dependency>
     </dependencies>
 </dependencyManagement>
@@ -88,7 +88,7 @@ feign组件后来改名为openfeign了
 ```
 <dependency>
   <groupId>org.springframework.cloud</groupId>
-  <artifactId>spring-cloud-starter-feign</artifactId>
+  <artifactId>spring-cloud-starter-openfeign</artifactId>
 </dependency>
 ```
 
